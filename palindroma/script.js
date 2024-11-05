@@ -1,5 +1,5 @@
 // const userWord = prompt("Inserisci la parola");
-const userWord = "ciao";
+const userWord = prompt("Inserisici una parola");
 let result = "";
 reverseString(userWord);
 console.log(result); 
