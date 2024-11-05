@@ -1,5 +1,6 @@
 // const userWord = prompt("Inserisci la parola");
 const userWord = "ciao";
+let result = "";
 reverseString(userWord);
 console.log(result); 
 
@@ -12,8 +13,7 @@ console.log(result);
 
 // funzioni
 function reverseString(userWord) {
-    let result = "";
-    for (let i = userWord.lenght - 1; i >= 0; i--) {
+    for (let i = userWord.length - 1; i >= 0; i--) {
         const curChar = userWord[i];
         result = result + curChar;
     }
