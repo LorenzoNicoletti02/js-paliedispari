@@ -1,3 +1,22 @@
+const userChoice = prompt("Scegli fra pari e dispari");
+const userNumber = parseInt(prompt("Scegli un numero tra 1 e 5"));
+console.log(userChoice, userNumber);
+
+const computerNumber = getrandomInt (1, 5);
+
+const sum = userNumber + computerNumber;
+
+console.log(computerNumber, sum);
+
+const sumResult = evenOdd(sum);
+console.log(sumResult);
+
+if(userChoice === sumResult) {
+    console.log("hai vinto");
+} else {
+    console.log("hai perso");
+}
+
 
 /**
  * Description placeholder
@@ -19,9 +38,9 @@ function getrandomInt(min, max) {
  * @returns {string}
  */
 
-function evenodd (numToCheck) {
+function evenOdd (numToCheck) {
     let result = "dispari";
-    IF (numToCheck % 2 === 0) {
+    if (numToCheck % 2 === 0) {
         result = "pari";
     }
     return result;
